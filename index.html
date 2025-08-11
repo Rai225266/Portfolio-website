@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourabh Rai - Portfolio</title>
+    <meta name="description" content="Sourabh Rai - B.Tech Student & Developer specializing in Python, AI, and Full-Stack Development">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="avatar">
+               <img src="sr.jpg" alt="Sourabh Rai" class="avatar-img"
+            </div>
+            
+            <h1 class="hero-title">SOURABH RAI</h1>
+            
+            <div class="typing-container">
+                <span class="typing-prefix">I'm a </span>
+                <span class="typed-text" id="typedText"></span>
+                <span class="cursor">|</span>
+            </div>
+            
+            <p class="hero-description">
+                Adaptable and solution-driven tech student pursuing B.Tech with expertise in Python, 
+                AI integration, and full-stack development. Seeks to leverage problem-solving skills 
+                and technical proficiency in dynamic environments to deliver innovative solutions.
+            </p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <a href="mailto:raisourabh2006@gmail.com">raisourabh2006@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span>Himachal Pradesh, India</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('projects')">View Projects</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">Contact Me</button>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            
+            <div class="skills-grid">
+                <div class="skills-nav">
+                    <div class="skill-tab active" data-skill="0">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16,18 22,12 16,6"/>
+                                <polyline points="8,6 2,12 8,18"/>
+                            </svg>
+                        </div>
+                        <h3>Technical</h3>
+                    </div>
+                    <div class="skill-tab" data-skill="1">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                                <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+                            </svg>
+                        </div>
+                        <h3>AI/ML</h3>
+                    </div>
+                    <div class="skill-tab" data-skill="2">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Professional</h3>
+                    </div>
+                    <div class="skill-tab" data-skill="3">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M2 12h20"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                </div>
+                
+                <div class="skills-content">
+                    <div class="skill-content active" id="skill-0">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">Python, asyncio</div>
+                            <div class="skill-item">Gemini API, Grok API</div>
+                            <div class="skill-item">C Programming</div>
+                            <div class="skill-item">HTML, CSS, Git</div>
+                            <div class="skill-item">VS Code, API Integration</div>
+                        </div>
+                    </div>
+                    <div class="skill-content" id="skill-1">
+                        <h3>AI/ML Expertise</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">Large Language Models (LLMs)</div>
+                            <div class="skill-item">Natural Language Processing</div>
+                            <div class="skill-item">API Integration</div>
+                            <div class="skill-item">Machine Learning Concepts</div>
+                        </div>
+                    </div>
+                    <div class="skill-content" id="skill-2">
+                        <h3>Professional Skills</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">Active Listening</div>
+                            <div class="skill-item">Decision-Making</div>
+                            <div class="skill-item">Time Management</div>
+                            <div class="skill-item">Self-Discipline</div>
+                            <div class="skill-item">Problem Solving</div>
+                        </div>
+                    </div>
+                    <div class="skill-content" id="skill-3">
+                        <h3>Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">Hindi (Native)</div>
+                            <div class="skill-item">English (Professional Working Proficiency)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Main Project -->
+            <div class="main-project">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>AI Assistant (Nova)</h3>
+                        <div class="project-badge">95% Accuracy</div>
+                    </div>
+                    <p class="project-tech">Python, Gemini, Grok, asyncio</p>
+                    <p class="project-description">Multimodal AI assistant with enhanced response capabilities</p>
+                    <div class="project-features">
+                        <div class="feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6"/>
+                                <path d="M1 12h6m6 0h6"/>
+                            </svg>
+                            <span>Integrated Gemini and Grok APIs for enhanced response capabilities</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6"/>
+                                <path d="M1 12h6m6 0h6"/>
+                            </svg>
+                            <span>Implemented asynchronous operations using asyncio</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6"/>
+                                <path d="M1 12h6m6 0h6"/>
+                            </svg>
+                            <span>Engineered natural language processing for voice/text commands</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other Projects -->
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="9" cy="9" r="2"/>
+                            <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                        </svg>
+                    </div>
+                    <h4>Console-Based Calculator</h4>
+                    <p class="project-tech">C Programming</p>
+                    <p>Arithmetic application with perfect accuracy</p>
+                    <div class="project-highlight">100% Accurate</div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10,9 9,9 8,9"/>
+                        </svg>
+                    </div>
+                    <h4>Personal Portfolio Website</h4>
+                    <p class="project-tech">HTML, CSS</p>
+                    <p>Responsive showcase of skills and projects</p>
+                    <div class="project-highlight">Responsive</div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18V5l12-2v13"/>
+                            <circle cx="6" cy="18" r="3"/>
+                            <circle cx="18" cy="16" r="3"/>
+                        </svg>
+                    </div>
+                    <h4>CLI Music Playlist Manager</h4>
+                    <p class="project-tech">C Programming</p>
+                    <p>Console-based music management system</p>
+                    <div class="project-highlight">File System</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="interests-section">
+        <div class="container">
+            <h2 class="section-title">Interests & Passions</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <div class="interest-icon blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                        </svg>
+                    </div>
+                    <span>AI Research</span>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="18.5" cy="17.5" r="2.5"/>
+                            <circle cx="5.5" cy="17.5" r="2.5"/>
+                            <circle cx="15" cy="5" r="1"/>
+                            <path d="M12 17.5V14l-3-3 4-3 2 3h2"/>
+                        </svg>
+                    </div>
+                    <span>Cycling</span>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <span>Technical Reading</span>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon orange">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+                        </svg>
+                    </div>
+                    <span>Travel</span>
+                </div>
+                <div class="interest-item">
+                 
+                        </svg>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Let's Build Something Amazing Together!</h3>
+                <p>Ready to collaborate on your next project?</p>
+                <a href="mailto:raisourabh2006@gmail.com" class="btn btn-primary">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Get In Touch
+                </a>
+            </div>
+            <p class="footer-text">© 2024 Sourabh Rai. Crafted with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
